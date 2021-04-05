@@ -1,0 +1,14 @@
+.page-header {
+  font-family: "Oswald";
+  @include font(500, 20px, 20px);
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  @extend: %list;
+}
+
+.main-nav__link {
+  color: $basic-black;
+}

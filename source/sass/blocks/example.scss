@@ -1,0 +1,39 @@
+.example {
+  background-color: $basic-light-grey;
+}
+
+.example__title {
+  font-family: "Oswald";
+  @include font(400, 36px, 40px);
+  color: $basic-black;
+}
+
+.example__number {
+  font-family: "Oswald";
+  @include font(400, 24px, 24px);
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.example-list {
+  @extend: %list;
+}
+
+.example__desc {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example-item__price {
+  font-family: "Oswald";
+  @include font(400, 14px, 20px);
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.comparison__text {
+  font-family: "Oswald";
+  @include font(400, 16px, 20px);
+  color: $basic-black;
+  text-transform: uppercase;
+}

@@ -1,0 +1,5 @@
+.process__title {
+  font-family: "Oswald";
+  @include font(400, 36px, 40px);
+  color: $basic-black;
+}

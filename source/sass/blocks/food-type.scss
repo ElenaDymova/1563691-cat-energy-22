@@ -1,0 +1,21 @@
+.food-type__list {
+  @extend: %list;
+}
+
+.food-type__item {
+  background-color: $basic-light-grey;
+}
+
+.food-type__caption {
+  font-family: "Oswald";
+  @include font(400, 24px, 37px);
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.food-type__link {
+  font-family: "Oswald";
+  @include font(400, 16px, 16px);
+  color: $basic-black;
+  text-transform: uppercase;
+}

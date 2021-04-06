@@ -1,0 +1,26 @@
+.main-display {
+  background-image: url(../../img/main-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-display__title {
+  font-family: "Oswald";
+  @include font(400, 36px, 36px);
+  color: $basic-white;
+}
+
+.main-display__text {
+  font-family: "Oswald";
+  @include font(400, 14px, 14px);
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
+.main-display__button {
+  font-family: "Oswald";
+  @include font(400, 14px, 20px);
+  color: $basic-white;
+  background-color: $basic-green;
+  padding: 7px 44px;
+  text-transform: uppercase;
+}

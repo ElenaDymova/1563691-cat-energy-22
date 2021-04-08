@@ -13,14 +13,3 @@ $hover-green: #5eaa2f;
 $active-form: #ff8282;
 $radio-grey: #bababa;
 $decoration-black: #222222;
-
-@mixin font ($fw, $fs, $lh) {
-  font-weight: $fw;
-  font-size: $fs;
-  line-height: $lh;
-}
-
-%list {
-  list-style: none;
-  padding: 0;
-}

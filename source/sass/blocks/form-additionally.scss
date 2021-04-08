@@ -1,0 +1,6 @@
+.form-additionally__item {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  @include font(400, 16px, 18px);
+  color: $basic-black;
+}

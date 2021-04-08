@@ -1,0 +1,13 @@
+.additional-product-card__title {
+  font-family: "Oswald";
+  @include font(400, 16px, 16px);
+  color: $decoration-black;
+  text-transform: uppercase;
+}
+
+.additional-product-card__text {
+  font-family: "Arial";
+  @include font(400, 14px, 14px);
+  text-transform: none;
+  color: $special-dark-grey;
+}

@@ -1,8 +1,9 @@
 // Global
 
+@import "variables.scss";
+@import "mixins.scss";
 @import "global.scss";
 @import "fonts.scss";
-@import "variables.scss";
 
 //Blocks
 
@@ -12,3 +13,15 @@
 @import "../sass/blocks/page-footer.scss";
 @import "../sass/blocks/food-type.scss";
 @import "../sass/blocks/example.scss";
+@import "../sass/blocks/assortiment.scss";
+@import "../sass/blocks/additionaly.scss";
+@import "../sass/blocks/form-main.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/scale.scss";
+@import "../sass/blocks/social-list.scss";
+@import "../sass/blocks/additional-product-card.scss";
+@import "../sass/blocks/form-date.scss";
+@import "../sass/blocks/eating-list.scss";
+@import "../sass/blocks/host-contacts.scss";
+@import "../sass/blocks/form-comment.scss";
+@import "../sass/blocks/form-additionally.scss";

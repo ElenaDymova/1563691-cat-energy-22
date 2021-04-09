@@ -1,0 +1,11 @@
+.main-nav__list {
+  @include reset-list;
+}
+
+.main-nav__link {
+  color: $basic-black;
+}
+
+.map-adress--grey {
+  background-color: $basic-light-grey;
+}

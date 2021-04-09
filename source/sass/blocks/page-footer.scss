@@ -2,22 +2,18 @@
   background-color: $basic-light-grey;
 }
 
-.map-adress__title {
+.page-footer__title {
   font-family: "Oswald";
   @include font(400, 16px, 18px);
   color: $basic-black;
   text-transform: uppercase;
 }
 
-.map-adress__text {
+.page-footer__text {
   font-size: 14px;
   line-height: 20px;
 }
 
-.map-adress {
+.page-footer__adress {
   background-color: $basic-white;
-}
-
-.social-list {
-  @extend: %list;
 }

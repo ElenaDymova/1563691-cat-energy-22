@@ -15,8 +15,8 @@
   text-transform: uppercase;
 }
 
-.example-list {
-  @extend: %list;
+.example__list {
+  @include reset-list;
 }
 
 .example__desc {
@@ -24,14 +24,14 @@
   line-height: 12px;
 }
 
-.example-item__price {
+.item__price {
   font-family: "Oswald";
   @include font(400, 14px, 20px);
   color: $basic-black;
   text-transform: uppercase;
 }
 
-.comparison__text {
+.example__text {
   font-family: "Oswald";
   @include font(400, 16px, 20px);
   color: $basic-black;

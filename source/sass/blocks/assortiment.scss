@@ -1,0 +1,52 @@
+.assortiment__title {
+  font-family: "Oswald";
+  @include font(400, 36px, 36px);
+  color: $basic-black;
+}
+
+.assortiment__name {
+  font-family: "Oswald";
+  @include font(400, 16px, 20px);
+  color: $decoration-black;
+}
+
+.assortiment__point {
+  font-family: "Arial";
+  @include font(400, 12px, 16px);
+}
+
+.catalog__button {
+  background-color: $basic-green;
+  padding: 10px 109px;
+  color: $basic-white;
+  font-family: "Oswald";
+  @include font(400, 16px, 20px);
+  text-transform: uppercase;
+}
+
+.assortiment__name {
+  color: $decoration-black;
+  text-transform: uppercase;
+}
+
+.assortiment__title--more {
+  font-family: "Oswald";
+  @include font(400, 16px, 20px);
+  color: $special-black;
+  text-transform: uppercase;
+}
+
+.assortiment__text {
+  font-family: "Arial";
+  @include font(400, 12px, 16px);
+}
+
+.assortiment__button--more {
+  background-color: $basic-light-grey;
+  color: $special-dark-grey;
+  border: none;
+  padding: 10px 94px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  @include font(400, 16px, 20px);
+}

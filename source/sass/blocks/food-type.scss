@@ -1,5 +1,5 @@
 .food-type__list {
-  @extend: %list;
+  @include reset-list;
 }
 
 .food-type__item {

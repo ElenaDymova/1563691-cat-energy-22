@@ -1,0 +1,49 @@
+.form__caption {
+  font-family: "Oswald";
+  @include font(400, 36px, 36px);
+  color: $basic-black;
+}
+
+.form__input {
+  &::placeholder {
+     font-family: "Oswald";
+     @include font(400, 16px, 18px);
+     text-transform: uppercase;
+     color: $special-dark-grey;
+   }
+ }
+
+.form__text {
+  font-family: "Oswald";
+  @include font(400, 14px, 18px);
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.form__item {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  @include font(400, 16px, 18px);
+  color: $special-dark-grey;
+}
+
+.form__title {
+  font-family: "Oswald";
+  @include font(400, 24px, 26px);
+  color: $basic-black;
+}
+
+.form__button {
+  font-family: "Oswald";
+  @include font(400, 16px, 20px);
+  background-color: $basic-green;
+  color: $basic-white;
+  padding: 7px 44px;
+  border: none;
+}
+
+.form__necessarily {
+  font-family: "Arial";
+  @include font(400, 14px, 16px);
+  color: $basic-black;
+}

@@ -4,11 +4,3 @@
   color: $basic-black;
   text-transform: uppercase;
 }
-
-.main-nav__list {
-  @extend: %list;
-}
-
-.main-nav__link {
-  color: $basic-black;
-}

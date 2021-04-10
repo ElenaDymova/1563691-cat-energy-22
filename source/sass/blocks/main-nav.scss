@@ -1,5 +1,23 @@
+.main-nav {
+  outline: 5px solid rgba(68, 0, 255, 0.8);
+  outline-offset: -5px;
+  padding: 0;
+  margin: 0;
+  height: 198px;
+  @media (min-width: $tablet-width) {
+    min-height: 76px;
+  }
+}
+
 .main-nav__list {
   @include reset-list;
+  @media (min-width: $tablet-width) {
+    width: 515px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+
 }
 
 .main-nav__link {
@@ -8,4 +26,10 @@
 
 .map-adress--grey {
   background-color: $basic-light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }

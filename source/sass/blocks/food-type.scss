@@ -1,9 +1,29 @@
 .food-type__list {
   @include reset-list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .food-type__item {
   background-color: $basic-light-grey;
+  min-height: 266px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 374px;
+    width: 570px;
+  }
+}
+
+.food-type__item--weight {
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .food-type__caption {
@@ -18,4 +38,16 @@
   @include font(400, 16px, 16px);
   color: $basic-black;
   text-transform: uppercase;
+}
+
+.food-type__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

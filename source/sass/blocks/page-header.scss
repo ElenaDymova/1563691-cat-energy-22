@@ -3,4 +3,35 @@
   @include font(500, 20px, 20px);
   color: $basic-black;
   text-transform: uppercase;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  @media (min-width: $tablet-width) {
+    min-height: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 109px;
+  }
+}
+
+.page-header__logo-image {
+  min-height: 66px;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 707px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

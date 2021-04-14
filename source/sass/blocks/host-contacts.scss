@@ -1,0 +1,18 @@
+.host-contacts {
+  border: none;
+  min-height: 217px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 219px;
+  }
+}
+
+.host-contacts__column {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}

@@ -1,6 +1,27 @@
+.form-additionally {
+  border: none;
+  min-height: 277px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 170px;
+  }
+}
+
 .form-additionally__item {
   text-transform: uppercase;
   font-family: "Oswald";
   @include font(400, 16px, 18px);
   color: $basic-black;
+}
+
+.form-additionally__list {
+  @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

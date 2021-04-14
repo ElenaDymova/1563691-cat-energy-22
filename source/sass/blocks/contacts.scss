@@ -1,0 +1,46 @@
+.contacts__title {
+  font-family: "Oswald";
+  @include font(400, 16px, 18px);
+  color: $special-black;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-family: "Arial";
+  @include font(400, 14px, 20px);
+  color: $special-dark-grey;
+}
+
+.contacts {
+  background-color: $basic-white;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 201px;
+  }
+}
+
+.contacts__wrapper {
+  min-height: 76px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.contacts--form {
+  background-color: $basic-light-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}

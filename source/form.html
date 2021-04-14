@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Функциональное питание для котов "Cat Energy"</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -17,10 +18,10 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item  main-nav__item--active">
+            <li class="main-nav__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
@@ -32,49 +33,58 @@
     </header>
 
     <main class="form-main">
-      <div class="form-main__wrapper">
-        <section>
-          <h1 class="form__caption">Подбор программы</h1>
-          <p class="form__text">Заполните анкету, и мы подберем <br>
+
+      <section class="order">
+        <div class="order__wrapper">
+          <h2 class="order__caption">Подбор программы</h2>
+          <p class="order__text">Заполните анкету, и мы подберем <br>
           программу питания для вашего кота</p>
-          <form action="" method="post">
-            <div class="form-date">
-              <p class="form-date__item  form__item">
-                <label for="cat-name">Имя:	&#9913;</label>
-                <input class="form-date__input form__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
-              </p>
-              <p class="form-date__item form__item">
-                <label for="cat-weight">Вес (кг):	&#9913;</label>
-                <input class="form-date__input form__input" id="cat-weight" type="text" name="cat-weight" placeholder="7">
-              </p>
-              <p class="form-date__item form__item">
-                <label for="cat-age">Возраст (лет):</label>
-                <input class="form-date__input form__input" id="cat-age" type="text" name="cat-age" placeholder="7">
-              </p>
-            </div>
-            <ul class="eating-list">
-              <li class="eating-list__item">
-                <input type="radio" name="eating-group" id="losing-weight" value="losing-weigh" checked>
-                <label class="eating-list__radio" for="losing-weight">Похудение</label>
-              </li>
-              <li class="eating-list__item">
-                <input type="radio" name="eating-group" id="weight-gain" value="weight-gain">
-                <label class="eating-list__radio" for="weight-gain">Набор массы</label>
-              </li>
-              <li class="eating-list__item">
-                <input type="radio" name="eating-group" id="uncertainty" value="uncertainty">
-                <label class="eating-list__radio" for="uncertainty">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
+          <form class="form" action="" method="post">
+            <fieldset class="form__column">
+              <legend class="visually-hidden">Общая информация</legend>
+              <div class="form__container">
+                <div class="form__date">
+                  <p class="form-date__item  form__item">
+                    <label for="cat-name">Имя:	&#9913;</label>
+                    <input class="form-date__input form__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
+                  </p>
+                  <p class="form-date__item form__item">
+                    <label for="cat-weight">Вес (кг):	&#9913;</label>
+                    <input class="form-date__input form__input" id="cat-weight" type="text" name="cat-weight" placeholder="7">
+                  </p>
+                  <p class="form-date__item form__item">
+                    <label for="cat-age">Возраст (лет):</label>
+                    <input class="form-date__input form__input" id="cat-age" type="text" name="cat-age" placeholder="7">
+                  </p>
+                </div>
+                <ul class="eating-list">
+                  <li class="eating-list__item">
+                    <input type="radio" name="eating-group" id="losing-weight" value="losing-weigh" checked>
+                    <label class="eating-list__radio" for="losing-weight">Похудение</label>
+                  </li>
+                  <li class="eating-list__item">
+                    <input type="radio" name="eating-group" id="weight-gain" value="weight-gain">
+                    <label class="eating-list__radio" for="weight-gain">Набор массы</label>
+                  </li>
+                  <li class="eating-list__item">
+                    <input type="radio" name="eating-group" id="uncertainty" value="uncertainty">
+                    <label class="eating-list__radio" for="uncertainty">Не знаю (Нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
             <fieldset class="host-contacts">
               <legend class="host-contacts__title form__title">Контактные данные (владельца кота)</legend>
-                <label class="host-contacts__item form__item" for="host-contacts__name">E-mail:&#9913;</label>
-                <input class="host-contacts__input form__input" id="host-contacts__name" type="email" name="name" placeholder="kuklachev@gmail.com">
-              </p>
-              <p>
-                <label class="host-contacts__item form__item" for="host-contacts__phone">Телефон:&#9913;</label>
-                <input class="host-contacts__input form__input" id="host-contacts__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-              </p>
+              <div class="host-contacts__column">
+                <p>
+                  <label class="host-contacts__item form__item" for="host-contacts__name">E-mail:&#9913;</label>
+                  <input class="host-contacts__input form__input" id="host-contacts__name" type="email" name="name" placeholder="kuklachev@gmail.com">
+                </p>
+                <p>
+                  <label class="host-contacts__item form__item" for="host-contacts__phone">Телефон:&#9913;</label>
+                  <input class="host-contacts__input form__input" id="host-contacts__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+                </p>
+              </div>
             </fieldset>
             <fieldset class="form-comment">
               <legend class="form-comment__title form__title">Комментарий</legend>
@@ -101,25 +111,37 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="form__button" type="submit">Отправить заявку</button>
-            <p class="form__necessarily">&#9913; &#8212; Обязательные поля</p>
+
+            <div class="order__footer">
+              <button class="order__button" type="submit">Отправить заявку</button>
+              <p class="order__necessarily">&#9913; &#8212; Обязательные поля</p>
+            </div>
+
           </form>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section class="contacts contacts--form">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="contacts__map">
+          <img src="img/map.png" width="320" height="362" alt="Адрес Cat Energy">
+        </div>
+      </section>
+
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <section class="page-footer__column page-footer__column--adress">
-          <h2 class="visually-hidden">Наш адрес</h2>
-          <div class="page-footer__adress">
-            <p class="page-footer__title">Приглашаем к сотрудничеству дилеров!</p>
-            <p class="page-footer__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          </div>
-          <img src="img/map.png" width="320" height="362" alt="Адрес Cat Energy">
-        </section>
-        <img class="page-footer__logo" src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy">
-        <section class="page-footer__column page-footer--social">
+
+        <div class="page-footer__logo">
+          <img class="page-footer__logo" src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy">
+        </div>
+
+        <section class="page-footer__social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="social-list">
             <li class="social-list__item">
@@ -133,10 +155,15 @@
             </li>
           </ul>
         </section>
-        <section class="page-footer__column page-footer--copyright">
+
+        <section class="page-footer__copyright">
           <h2 class="visually-hidden">Авторы макета</h2>
-          <img class="page-footer__copyright" src="img/copyright-html.svg" width="281" height="34" alt="Логотип HTML-Академии">
+          <a href="">
+            <span class="visually-hidden">HTML Academy</span>
+            <img class="page-footer__copyright" src="img/copyright-html.svg" width="281" height="34" alt="Логотип HTML-Академии">
+          </a>
         </section>
+
       </div>
     </footer>
   </body>

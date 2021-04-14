@@ -1,4 +1,4 @@
-.form__caption {
+.order__caption {
   font-family: "Oswald";
   @include font(400, 36px, 36px);
   color: $basic-black;
@@ -13,11 +13,23 @@
    }
  }
 
-.form__text {
+.order__text {
   font-family: "Oswald";
   @include font(400, 14px, 18px);
   color: $basic-black;
   text-transform: uppercase;
+}
+
+.order__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .form__item {
@@ -33,7 +45,11 @@
   color: $basic-black;
 }
 
-.form__button {
+.form__column {
+  border: none;
+}
+
+.order__button {
   font-family: "Oswald";
   @include font(400, 16px, 20px);
   background-color: $basic-green;
@@ -42,8 +58,22 @@
   border: none;
 }
 
-.form__necessarily {
+.order__necessarily {
   font-family: "Arial";
   @include font(400, 14px, 16px);
   color: $basic-black;
+}
+
+.form__container {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.order__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

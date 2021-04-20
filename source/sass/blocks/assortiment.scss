@@ -34,6 +34,7 @@
   font-family: "Oswald";
   @include font(400, 16px, 20px);
   text-transform: uppercase;
+  width: 280px;
 }
 
 .assortiment__name {
@@ -46,6 +47,7 @@
   @include font(400, 16px, 20px);
   color: $special-black;
   text-transform: uppercase;
+  padding-top: 79px;
 }
 
 .assortiment__text {
@@ -86,6 +88,8 @@
 
 .assortiment__card {
   width: 280px;
+  align-items: center;
+
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -94,4 +98,19 @@
   @media (min-width: $desktop-width) {
     width: 245px;
   }
+}
+
+.assortiment__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.assortiment__listing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 18px;
+}
+
+.assortiment__card--more {
+  text-align: center;
 }

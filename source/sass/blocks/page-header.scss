@@ -6,18 +6,33 @@
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -5px;
   @media (min-width: $tablet-width) {
-    min-height: 76px;
+    height: auto;
+    font-family: "Oswald";
+    @include font(500, 18px, 24px);
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 109px;
+    font-family: "Oswald";
+    @include font(500, 20px, 30px);
   }
 }
 
 .page-header__logo-image {
-  min-height: 66px;
+  width: 33px;
+  height: 37px;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
+}
+
+.page-header__logo-image-two {
+  width: 101px;
+  height: 18px;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -34,4 +49,37 @@
     width: 1220px;
     margin: 0 auto;
   }
+}
+
+.page-header__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__toggle {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+      display: none;
+  }
+}
+
+.main-nav--closed .page-header__toggle::before {
+  content: "";
+  width: 36px;
+  height: 2px;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+}
+
+.main-nav--closed .page-header__toggle:active::before {
+  background-color: fade($basic-black, 30%);
+  box-shadow:
+    0 8px 0 0 fade($basic-black, 30%),
+    0 16px 0 0 fade($basic-black, 30%);
 }

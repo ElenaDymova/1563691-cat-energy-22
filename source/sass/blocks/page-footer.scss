@@ -1,19 +1,37 @@
 .page-footer {
+  height: 236px;
   background-color: $basic-light-grey;
+
+  @media (min-width: $tablet-width) {
+    height: 146px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 149px;
+  }
 }
 
-.page-footer__title {
-  font-family: "Oswald";
-  @include font(400, 16px, 18px);
-  color: $basic-black;
-  text-transform: uppercase;
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
-.page-footer__text {
-  font-size: 14px;
-  line-height: 20px;
-}
+.social-list {
+  display: flex;
 
-.page-footer__adress {
-  background-color: $basic-white;
+  @media (min-width: $tablet-width) {
+    width: 322px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }

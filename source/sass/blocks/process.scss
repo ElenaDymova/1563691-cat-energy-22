@@ -3,3 +3,47 @@
   @include font(400, 36px, 40px);
   color: $basic-black;
 }
+
+.process__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.process__list {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.process__item {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 177px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 227px;
+  }
+}

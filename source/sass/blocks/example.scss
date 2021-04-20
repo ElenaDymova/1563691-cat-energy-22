@@ -1,5 +1,9 @@
 .example {
   background-color: $basic-light-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    }
 }
 
 .example__title {
@@ -36,4 +40,25 @@
   @include font(400, 16px, 20px);
   color: $basic-black;
   text-transform: uppercase;
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.example__background {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-light-grey;
+    width: 100%;
+    height: 462px;
+  }
 }

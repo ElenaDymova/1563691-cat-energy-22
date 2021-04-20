@@ -1,0 +1,12 @@
+.form-comment {
+  border: none;
+  min-height: 238px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 273px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 341px;
+  }
+}

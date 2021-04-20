@@ -1,3 +1,15 @@
+.additionally {
+  margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 75px;
+  }
+}
+
 .additionally__caption {
   font-family: "Oswald";
   @include font(400, 24px, 24px);
@@ -15,4 +27,31 @@
   font-family: "Arial";
   @include font(400, 16px, 20px);
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.additionally__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.additionally__column {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+  }
 }

@@ -1,7 +1,12 @@
+.process {
+  margin-top: 27px;
+}
+
 .process__title {
   font-family: "Oswald";
   @include font(400, 36px, 40px);
   color: $basic-black;
+  @include reset-list;
 }
 
 .process__wrapper {
@@ -21,6 +26,7 @@
   outline-offset: -5px;
   margin: 0;
   padding: 0;
+  margin-top: 38px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -36,14 +42,95 @@
 .process__item {
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
+  padding-left: 80px;
+  position: relative;
   min-height: 60px;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
-    min-height: 177px;
+    font-family: "Arial";
+    @include font(400, 16px, 24px);
+    width: 230px;
+    padding-top: 111px;
+    padding-bottom: 134px;
+    padding-left: 0;
+    padding-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 227px;
+    width: 201px;
+    padding-top: 111px;
+    padding-bottom: 44px;
+  }
+}
+
+.process__description--benefit {
+  &::before {
+    content: "";
+    background-image: url("../../img/benefit-icon.svg");
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 5px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
+  }
+}
+
+.process__description--powder {
+  &::before {
+    content: "";
+    background-image: url("../../img/powder-icon.svg");
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 5px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
+  }
+}
+
+.process__description--eating {
+  &::before {
+    content: "";
+    background-image: url("../../img/eating-icon.svg");
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 5px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
+  }
+}
+
+.process__description--time {
+  &::before {
+    content: "";
+    background-image: url("../../img/time-icon.svg");
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 5px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+    }
   }
 }

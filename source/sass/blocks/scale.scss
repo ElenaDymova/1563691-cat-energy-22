@@ -11,6 +11,12 @@
   box-sizing: border-box;
   border-radius: 6px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    background-color: $scale-grey;
+    height: 6px;
+  }
 }
 
 .scale__toggle {
@@ -21,5 +27,15 @@
   position: absolute;
   top: 3px;
   left: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 8px;
+    height: 8px;
+    border: 13px solid $basic-white;
+    border-radius: 50%;
+    top: -13px;
+    cursor: pointer;
+    left: 197px;
+  }
 }
 

@@ -8,6 +8,10 @@
     }
 }
 
+.example__item {
+  @include reset-list;
+}
+
 .example__title {
   font-family: "Oswald";
   @include font(400, 36px, 40px);
@@ -24,34 +28,65 @@
   font-family: "Oswald";
   @include font(400, 24px, 24px);
   color: $basic-black;
+  @include reset-list;
   text-transform: uppercase;
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+  width: 124px;
   text-align: center;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     @include font(400, 30px, 37px);
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 162px;
+    margin-left: 42px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
 .example__list {
   @include reset-list;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
 
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 69px;
+  }
 }
 
 .example__desc {
   font-size: 12px;
   line-height: 12px;
-  align-items: center;
+  width: 88px;
+  text-align: center;
+  position: relative;
+  background-color: $basic-light-grey;
+  top: -17px;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
     @include font(400, 20px, 20px);
+    background-color: $basic-white;
+    top: -35px;
+    left: 30px;
+    width: 100px;
   }
-}
-
-.example__item {
-  display: grid;
-  grid-template-rows: 50px 25px;
-  border: 1px solid $special-grey;
 }
 
 .example__item--price {
@@ -59,6 +94,21 @@
   @include font(400, 14px, 20px);
   color: $basic-black;
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font(400, 20px, 20px);
+    width: auto;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    text-align: left;
+    margin-top: 55px;
+    margin-bottom: 75px;
+  }
 }
 
 .example__text {
@@ -83,16 +133,6 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-.example__background {
-  @media (min-width: $tablet-width) {
-    background-color: $basic-light-grey;
-    width: 100%;
-    height: 462px;
-    position: absolute;
-    top: 619px;
   }
 }
 
@@ -121,5 +161,6 @@
 
 .example__button {
   display: flex;
+  align-items: center;
   justify-content: center;
 }

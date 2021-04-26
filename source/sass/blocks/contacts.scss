@@ -48,7 +48,6 @@
 }
 
 .contacts__wrapper {
-  min-height: 76px;
   display: flex;
   justify-content: space-between;
 
@@ -66,7 +65,7 @@
   }
 }
 
-.contacts--form {
+.contacts--grey {
   background-color: $basic-light-grey;
 
   @media (min-width: $desktop-width) {
@@ -76,4 +75,5 @@
 
 .contacts__map {
   position: relative;
+  width: 100%;
 }

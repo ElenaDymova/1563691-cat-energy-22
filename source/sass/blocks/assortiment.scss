@@ -20,39 +20,93 @@
   font-family: "Oswald";
   @include font(400, 16px, 20px);
   color: $decoration-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(400, 20px, 24px);
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(400, 20px, 21px);
+  }
 }
 
 .assortiment__point {
   font-family: "Arial";
   @include font(400, 12px, 16px);
+
+  @media (min-width: $tablet-width) {
+    @include font(400, 16px, 16px);
+  }
 }
 
 .catalog__button {
   background-color: $basic-green;
-  padding: 10px 109px;
+  padding: 10px 0px;
   color: $basic-white;
   font-family: "Oswald";
   @include font(400, 16px, 20px);
   text-transform: uppercase;
-  width: 280px;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
-.assortiment__name {
-  color: $decoration-black;
-  text-transform: uppercase;
+.assortiment__button {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 248px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }
 
 .assortiment__title--more {
   font-family: "Oswald";
-  @include font(400, 16px, 20px);
+  @include font(400, 20px, 20px);
   color: $special-black;
   text-transform: uppercase;
+  @include reset-list;
   padding-top: 79px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../../img/plus.svg");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 26px;
+    left: 125px;
+
+    @media (min-width: $tablet-width) {
+      top: 52px;
+      left: 132px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font(400, 20px, 22px);
+    padding-top: 161px;
+  }
 }
 
 .assortiment__text {
   font-family: "Arial";
   @include font(400, 12px, 16px);
+  @include reset-list;
+  margin-top: 8px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    @include font(400, 16px, 18px);
+    margin-top: 23px;
+    margin-bottom: 87px;
+  }
 }
 
 .assortiment__button--more {
@@ -63,9 +117,19 @@
   text-transform: uppercase;
   font-family: "Oswald";
   @include font(400, 16px, 20px);
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .assortiment__wrapper {
+  outline: 5px solid rgba(68, 0, 255, 0.8);
+  outline-offset: -5px;
   @media (min-width: $tablet-width) {
     width: 707px;
     margin: 0 auto;
@@ -87,8 +151,10 @@
 }
 
 .assortiment__card {
-  width: 280px;
+  outline: 5px solid rgba(216, 195, 5, 0.8);
+  outline-offset: -5px;
   align-items: center;
+  margin-top: 33px;
 
 
   @media (min-width: $tablet-width) {
@@ -103,14 +169,51 @@
 .assortiment__main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .assortiment__listing {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .assortiment__card--more {
   text-align: center;
+}
+
+.assortiment__description {
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.assortiment__image {
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }

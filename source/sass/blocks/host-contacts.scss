@@ -1,18 +1,41 @@
 .host-contacts {
   border: none;
-  min-height: 217px;
+  margin-top: 45px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    min-height: 290px;
+    margin-top: 71px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 219px;
+    margin-top: 69px;
   }
 }
 
 .host-contacts__column {
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 76px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
+  }
+}
+
+.host-contacts__point {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }

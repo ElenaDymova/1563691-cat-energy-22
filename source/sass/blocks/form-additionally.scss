@@ -1,13 +1,32 @@
 .form-additionally {
   border: none;
-  min-height: 277px;
+  margin-top: 23px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    min-height: 240px;
+    margin-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 170px;
+    margin-top: 67px;
+  }
+}
+
+.form-additionally__list {
+  @include reset-list;
+  margin-top: 34px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 57px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+    margin-bottom: 61px;
   }
 }
 
@@ -16,12 +35,37 @@
   font-family: "Oswald";
   @include font(400, 16px, 18px);
   color: $basic-black;
-}
-
-.form-additionally__list {
-  @include reset-list;
+  margin-top: 12px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
+}
+
+.form-additionally__label {
+  margin-left: 16px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 19px;
+  }
+}
+
+.form-additionally__radio + label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000000;
   }
 }

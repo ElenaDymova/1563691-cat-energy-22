@@ -1,17 +1,31 @@
-.form-date {
-  height: 187px;
-
-  @media (min-width: $tablet-width) {
-    height: 268px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 196px;
-  }
-}
-
 .form__column {
   @media (min-width: $desktop-width) {
     display: flex;
+    margin-top: 66px;
+  }
+}
+
+.form-date__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__date {
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin-bottom: 0;
   }
 }

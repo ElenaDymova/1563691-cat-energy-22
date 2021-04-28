@@ -3,8 +3,7 @@
   @include font(500, 20px, 20px);
   color: $basic-black;
   text-transform: uppercase;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+
   @media (min-width: $tablet-width) {
     height: auto;
     font-family: "Oswald";
@@ -58,26 +57,46 @@
 }
 
 .page-header__toggle {
-  width: 18px;
+  width: 24px;
   height: 18px;
   cursor: pointer;
   border: none;
   background-color: $basic-white;
-
+  position: relative;
   @media (min-width: $tablet-width) {
       display: none;
   }
 }
 
-.main-nav--closed .page-header__toggle::before {
+.page-header__toggle--open::before {
   content: "";
-  width: 36px;
-  height: 2px;
+  display: block;
+  width: 24px;
+  height: 1.5px;
   background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.page-header__toggle--open:active::before {
+  background-color: fade($basic-black, 30%);
+  box-shadow:
+    0 8px 0 0 fade($basic-black, 30%),
+    0 16px 0 0 fade($basic-black, 30%);
+}
+
+.page-header__toggle--close::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background-color: red;
   box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
 }
 
-.main-nav--closed .page-header__toggle:active::before {
+.page-header__toggle--close:active::before {
   background-color: fade($basic-black, 30%);
   box-shadow:
     0 8px 0 0 fade($basic-black, 30%),

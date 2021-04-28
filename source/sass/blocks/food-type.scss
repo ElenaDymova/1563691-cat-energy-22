@@ -1,14 +1,13 @@
-.process {
-  @media (min-width: $desktop-width) {
-    margin-top: 71px;
-  }
-}
-
 .food-type__list {
   @include reset-list;
   margin-top: 200px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-top: 82px;
     display: flex;
   }
 }

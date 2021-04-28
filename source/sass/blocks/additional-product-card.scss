@@ -1,8 +1,30 @@
+.additional-product-card {
+  @media (min-width: $tablet-width) {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-self: center;
+    margin: 0;
+    justify-content: space-between;
+  }
+}
+
 .additional-product-card__title {
   font-family: "Oswald";
   @include font(400, 16px, 16px);
   color: $decoration-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(400, 20px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .additional-product-card__text {
@@ -10,4 +32,44 @@
   @include font(400, 14px, 14px);
   text-transform: none;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    @include font(400, 16px, 20px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.additional-product-card__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-product-card__column {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.additional-product-card__button {
+  font-family: "Oswald";
+  @include font(400, 16px, 20px);
+  background-color: $basic-green;
+  color: $basic-white;
+  width: auto;
+  padding: 7px 0;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    padding: 7px 26px;
+  }
 }

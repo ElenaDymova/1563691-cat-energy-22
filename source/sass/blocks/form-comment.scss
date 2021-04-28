@@ -1,12 +1,28 @@
 .form-comment {
   border: none;
-  min-height: 238px;
+  padding: 0;
+  margin-top: 24px;
 
   @media (min-width: $tablet-width) {
-    min-height: 273px;
+    margin-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 341px;
+    margin-top: 69px;
+  }
+}
+
+.form-comment__input {
+  margin-top: 38px;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 125px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 76px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 134px;
   }
 }

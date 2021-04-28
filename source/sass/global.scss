@@ -3,6 +3,7 @@
   font-family: Arial;
   @include font(400, 14px, 18px);
   color: var(--special-dark-grey);
+  margin: 0 auto;
 }
 
 a {

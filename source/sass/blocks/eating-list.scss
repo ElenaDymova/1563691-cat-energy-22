@@ -1,19 +1,29 @@
-.eating-list {
-  @include reset-list;
-  height: 157px;
-
-  @media (min-width: $tablet-width) {
-    height: 196px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 196px;
-  }
-}
-
 .eating-list__radio {
   text-transform: uppercase;
   font-family: "Oswald";
   @include font(400, 16px, 18px);
   color: $decoration-black;
+  margin-left: 15px
+}
+
+.eating-list {
+  @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $form-grey;
+    margin-top: 72px;
+    padding-left: 29px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+.eating-list__item {
+  margin-bottom: 13px;
 }

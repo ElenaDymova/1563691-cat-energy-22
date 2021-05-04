@@ -1,9 +1,19 @@
-.eating-list__radio {
+.eating-list__label {
   text-transform: uppercase;
   font-family: "Oswald";
   @include font(400, 16px, 18px);
   color: $decoration-black;
-  margin-left: 15px
+  margin-left: 46px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 89px;
+    @include font(400, 20px, 18px);
+   }
+
+   @media (min-width: $desktop-width) {
+
+   }
 }
 
 .eating-list {
@@ -15,15 +25,62 @@
     padding-left: 29px;
     padding-top: 25px;
     padding-bottom: 25px;
+    margin-right: 36px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
     width: 50%;
     margin-top: 0;
+    margin-right: 0;
   }
 }
 
 .eating-list__item {
-  margin-bottom: 13px;
+  margin-bottom: 30px;
+}
+
+.eating-list__radio + label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -46px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special-grey;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+     width: 40px;
+     height: 40px;
+     left: -80px;
+    }
+
+    @media (min-width: $desktop-width) {
+
+    }
+  }
+}
+
+.eating-list__radio:checked + label::after {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 9px;
+    width: 13.5px;
+    height: 13.5px;
+    background-color: $basic-green;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+      left: -68px;
+      top: 12px;
+     }
+
+     @media (min-width: $desktop-width) {
+
+     }
 }

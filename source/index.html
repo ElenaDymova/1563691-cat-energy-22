@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Функциональное питание для котов "Cat Energy"</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+    <link rel="icon" href="img/favicon-32.svg" type="image/svg+xml" sizes="32x32">
+    <link rel="icon" href="img/favicon-16.svg" type="image/svg+xml" sizes="16x16">
+    <link rel="icon" href="img/favicon-152.svg" sizes="152x152">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -48,8 +52,12 @@
             <h2 class="main-display__title">Функциональное <br>
             питание для котов</h2>
             <p class="main-display__text">Занялся собой? Займись котом!</p>
-            <img class="main-display__image" src="img/packaging-food.png" width="280" height="270" alt="Упаковка корма Cat Energy">
-            <a class="main-display__button" href="form.html">Подобрать программу</a>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/packaging-food-desktop.png 1x, img/packaging-food-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/packaging-food-tablet.png 1x, img/packaging-food-tablet@2x.png 2x">
+              <img class="main-display__image" srcset="img/packaging-food@2x.png 2x" src="img/packaging-food.png" wh="280" height="270"idt alt="Упаковка корма Cat Energy">
+            </picture>
+            <a class="main-display__button button" href="form.html">Подобрать программу</a>
           </div>
         </div>
       </section>
@@ -108,15 +116,25 @@
                 <p class="example__number">60 дней</p>
                 <p class="example__desc">затрачено <br> времени</p>
               </li>
-              <li class="example__item example__item--price">
+              <p class="example__item example__item--price">
                 Затраты на питание:<br>
                 15 000 РУБ.
-              </li>
+              </p>
             </ul>
           </div>
           <div class="example__image">
-            <img class="example__image--fat" src="img/cat-before.png" width="311" height="232" alt="Кот до питания Cat Energy">
-            <img class="example__image--thin" src="img/cat-after.png" width="311" height="232" alt="Кот после питания Cat Energy">
+            <div class="example__pictures">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/cat-before-desktop.png 1x, img/cat-before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
+                <img class="example__image--fat" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="311" height="232" alt="Кот до питания Cat Energy">
+              </picture>
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/cat-after-desktop.png 1x, cat-after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
+                <img class="example__image--thin" src="img/cat-after.png" width="311" height="232" alt="Кот после питания Cat Energy">
+              </picture>
+            </div>
             <div class="example__button">
               <p class="example__text">Было</p>
               <div class="scale">
@@ -133,15 +151,14 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <p class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</p>
-          <div class="contacts__content">
-            <address class="contacts__text">ул. Большая Конюшенная, д. 19/8</address>
-            <address class="contacts__text--city">Санкт-Петербург</address>
-          </div>
+          <p class="contacts__title">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+          <address class="contacts__text">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
         </div>
-        <div class="contacts__map">
-          <img src="img/map.png" width="320" height="362" alt="Адрес Cat Energy">
-        </div>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/map-desktop.png 1x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x">
+          <img class="contacts__image" src="img/map.png" width="320" height="362" alt="Адрес Cat Energy">
+        </picture>
       </section>
 
     </main>

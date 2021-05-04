@@ -34,23 +34,28 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__wrapper {
+.page-header__wrapper {
+
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 707px;
     margin: 0 auto;
+    margin-left: 30px;
+    margin-right: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header__wrapper {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
+    margin-left: 110px;
+    margin-right: 110px;
   }
 }
 
 .page-header__column {
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;

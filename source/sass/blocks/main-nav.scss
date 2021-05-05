@@ -1,6 +1,5 @@
 .main-nav {
-  outline: 5px solid rgba(68, 0, 255, 0.8);
-  outline-offset: -5px;
+
   padding: 0;
   margin: 0;
   height: 198px;
@@ -31,9 +30,10 @@
   text-decoration: none;
   color: $basic-black;
 
-  &:hover {
-    border-bottom: 2px solid $basic-black;
-  }
+  //&:hover {
+    //color: opacity($basic-black, 0.2);
+    //border-bottom: 2px solid opacity($basic-black, 0.2);
+  //}
 }
 
 .map-adress--grey {

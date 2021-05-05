@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Функциональное питание для котов "Cat Energy"</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+    <link rel="icon" href="img/favicon-32.svg" type="image/svg+xml" sizes="32x32">
+    <link rel="icon" href="img/favicon-16.svg" type="image/svg+xml" sizes="16x16">
+    <link rel="icon" href="img/favicon-152.svg" sizes="152x152">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -44,16 +48,22 @@
         <div class="assortiment__list">
           <article class="assortiment__card">
             <div class="assortiment__main">
-              <a class="assortiment__image" href="#"><img src="img/product-one.png" width="140" height="112" alt="Изображение упаковки с питанием"></a>
+              <a class="assortiment__image" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/product-one-desktop.png 1x, img/product-one-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/product-one-tablet.png 1x, img/product-one-tablet@2x.png 2x">
+                  <img class="assortiment__picture" src="img/product-one.png" srcset="img/product-one@2x.png 2x" width="140" height="112" alt="Изображение упаковки с питанием">
+                </picture>
+              </a>
               <div class="assortiment__description">
                 <a class="assortiment__link" href="#"><h3 class="assortiment__name">Cat Energy PRO 500 г</h3></a>
                 <dl class="assortiment__listing">
                   <dt class="assortiment__point">Масса</dt>
-                  <dd class="assortiment__point">500 г</dd>
+                  <dd class="assortiment__point assortiment__point--right">500 г</dd>
                   <dt class="assortiment__point">Вкус</dt>
-                  <dd class="assortiment__point">Курица</dd>
+                  <dd class="assortiment__point assortiment__point--right">Курица</dd>
                   <dt class="assortiment__point">Цена</dt>
-                  <dd class="assortiment__point">700 Р.</dd>
+                  <dd class="assortiment__point assortiment__point--right">700 Р.</dd>
                 </dl>
               </div>
             </div>
@@ -61,15 +71,21 @@
           </article>
           <article class="assortiment__card">
             <div class="assortiment__main">
-              <a class="assortiment__image" href="#"><img src="img/product-two.png" width="140" height="112" alt="Изображение упаковки с питанием"></a>
+              <a class="assortiment__image" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/product-two-desktop.png 1x, img/product-two-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/product-two-tablet.png 1x, img/product-two-tablet@2x.png 2x">
+                  <img class="assortiment__picture" src="img/product-two.png" srcset="img/product-two@2x.png 2x" width="140" height="112" alt="Изображение упаковки с питанием">
+                </picture>
+              </a>
               <div class="assortiment__description">
                 <a href="#"><h3 class="assortiment__name">Cat Energy PRO 1000 г</h3></a>
                 <dl class="assortiment__listing">
-                  <dt class="assortiment__point assortiment__point--left">Масса</dt>
+                  <dt class="assortiment__point">Масса</dt>
                   <dd class="assortiment__point assortiment__point--right">1000 г</dd>
-                  <dt class="assortiment__point assortiment__point--left">Вкус</dt>
+                  <dt class="assortiment__point">Вкус</dt>
                   <dd class="assortiment__point assortiment__point--right">Курица</dd>
-                  <dt class="assortiment__point assortiment__point--left">Цена</dt>
+                  <dt class="assortiment__point">Цена</dt>
                   <dd class="assortiment__point assortiment__point--right">1000 Р.</dd>
                 </dl>
               </div>
@@ -78,16 +94,22 @@
           </article>
           <article class="assortiment__card">
             <div class="assortiment__main">
-              <a class="assortiment__image" href="#"><img src="img/product-three.png" width="140" height="112" alt="Изображение упаковки с питанием"></a>
+              <a class="assortiment__image" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/product-three-desktop.png 1x, img/product-three-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/product-three-tablet.png 1x, img/product-three-tablet@2x.png 2x">
+                  <img src="img/product-three.png" srcset="img/product-three@2x.png 2x" width="140" height="112" alt="Изображение упаковки с питанием">
+                </picture>
+              </a>
               <div class="assortiment__description">
                 <a href="#"><h3 class="assortiment__name">Cat Energy PRO 500 г</h3></a>
                 <dl class="assortiment__listing">
                   <dt class="assortiment__point">Масса</dt>
-                  <dd class="assortiment__point">500 г</dd>
+                  <dd class="assortiment__point assortiment__point--right">500 г</dd>
                   <dt class="assortiment__point">Вкус</dt>
-                  <dd class="assortiment__point">Рыба</dd>
+                  <dd class="assortiment__point assortiment__point--right">Рыба</dd>
                   <dt class="assortiment__point">Цена</dt>
-                  <dd class="assortiment__point">700 Р.</dd>
+                  <dd class="assortiment__point assortiment__point--right">700 Р.</dd>
                 </dl>
               </div>
             </div>
@@ -95,16 +117,22 @@
           </article>
           <article class="assortiment__card">
             <div class="assortiment__main">
-              <a class="assortiment__image" href="#"><img src="img/product-four.png" width="140" height="112" alt="Изображение упаковки с питанием"></a>
+              <a class="assortiment__image" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/product-four-desktop.png 1x, img/product-four-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/product-four-tablet.png 1x, img/product-four-tablet@2x.png 2x">
+                  <img src="img/product-four.png" srcset="img/product-four@2x.png 2x" width="140" height="112" alt="Изображение упаковки с питанием">
+                </picture>
+              </a>
               <div class="assortiment__description">
                 <a href="#"><h3 class="assortiment__name">Cat Energy PRO 1000 г</h3></a>
                 <dl class="assortiment__listing">
                   <dt class="assortiment__point">Масса</dt>
-                  <dd class="assortiment__point">1000 г</dd>
+                  <dd class="assortiment__point assortiment__point--right">1000 г</dd>
                   <dt class="assortiment__point">Вкус</dt>
-                  <dd class="assortiment__point">Рыба</dd>
+                  <dd class="assortiment__point assortiment__point--right">Рыба</dd>
                   <dt class="assortiment__point">Цена</dt>
-                  <dd class="assortiment__point">1000 Р.</dd>
+                  <dd class="assortiment__point assortiment__point--right">1000 Р.</dd>
                 </dl>
               </div>
             </div>
@@ -112,16 +140,22 @@
           </article>
           <article class="assortiment__card">
             <div class="assortiment__main">
-              <a class="assortiment__image" href="#"><img src="img/product-five.png" width="140" height="112" alt="Изображение упаковки с питанием"></a>
+              <a class="assortiment__image" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/product-five-desktop.png 1x, img/product-five-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/product-five-tablet.png 1x, img/product-five-tablet@2x.png 2x">
+                  <img src="img/product-five.png" srcset="img/product-five@2x.png 2x" width="140" height="112" alt="Изображение упаковки с питанием">
+                </picture>
+              </a>
               <div class="assortiment__description">
                 <a href="#"><h3 class="assortiment__name">Cat Energy Slim 500 г</h3></a>
                 <dl class="assortiment__listing">
                   <dt class="assortiment__point">Масса</dt>
-                  <dd class="assortiment__point">500 г</dd>
+                  <dd class="assortiment__point assortiment__point--right">500 г</dd>
                   <dt class="assortiment__point">Вкус</dt>
-                  <dd class="assortiment__point">Гречка</dd>
+                  <dd class="assortiment__point assortiment__point--right">Гречка</dd>
                   <dt class="assortiment__point">Цена</dt>
-                  <dd class="assortiment__point">400 Р.</dd>
+                  <dd class="assortiment__point assortiment__point--right">400 Р.</dd>
                 </dl>
               </div>
             </div>
@@ -129,16 +163,22 @@
           </article>
           <article class="assortiment__card">
             <div class="assortiment__main">
-              <a class="assortiment__image" href="#"><img src="img/product-six.png" width="140" height="112" alt="Изображение упаковки с питанием"></a>
+              <a class="assortiment__image" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/product-six-desktop.png 1x, img/product-six-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/product-six-tablet.png 1x, img/product-six-tablet@2x.png 2x">
+                  <img src="img/product-six.png" srcset="img/product-six@2x.png 2x" width="140" height="112" alt="Изображение упаковки с питанием">
+                </picture>
+              </a>
               <div class="assortiment__description">
                 <a href="#"><h3 class="assortiment__name">Cat Energy Slim 1000 г</h3></a>
                 <dl class="assortiment__listing">
                   <dt class="assortiment__point">Масса</dt>
-                  <dd class="assortiment__point">1000 г</dd>
+                  <dd class="assortiment__point assortiment__point--right">1000 г</dd>
                   <dt class="assortiment__point">Вкус</dt>
-                  <dd class="assortiment__point">Гречка</dd>
+                  <dd class="assortiment__point assortiment__point--right">Гречка</dd>
                   <dt class="assortiment__point">Цена</dt>
-                  <dd class="assortiment__point">700 Р.</dd>
+                  <dd class="assortiment__point assortiment__point--right">700 Р.</dd>
                 </dl>
               </div>
             </div>
@@ -146,16 +186,22 @@
           </article>
           <article class="assortiment__card">
             <div class="assortiment__main">
-              <a class="assortiment__image" href="#"><img src="img/product-seven.png" width="140" height="112" alt="Изображение упаковки с питанием"></a>
+              <a class="assortiment__image" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/product-seven-desktop.png 1x, img/product-seven-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/product-seven-tablet.png 1x, img/product-seven-tablet@2x.png 2x">
+                  <img src="img/product-seven.png" srcset="img/product-seven@2x.png 2x" width="140" height="112" alt="Изображение упаковки с питанием">
+                </picture>
+              </a>
               <div class="assortiment__description">
                 <a href="#"><h3 class="assortiment__name">Cat Energy Slim 500 г</h3></a>
                 <dl class="assortiment__listing">
                   <dt class="assortiment__point">Масса</dt>
-                  <dd class="assortiment__point">500 г</dd>
+                  <dd class="assortiment__point assortiment__point--right">500 г</dd>
                   <dt class="assortiment__point">Вкус</dt>
-                  <dd class="assortiment__point">Рис</dd>
+                  <dd class="assortiment__point assortiment__point--right">Рис</dd>
                   <dt class="assortiment__point">Цена</dt>
-                  <dd class="assortiment__point">500 Р.</dd>
+                  <dd class="assortiment__point assortiment__point--right">500 Р.</dd>
                 </dl>
               </div>
             </div>
@@ -176,49 +222,33 @@
               <ul class="additionally__list">
                 <li class="additionally__item">
                   <article class="additional-product-card">
-                    <div class="additional-product-card__column">
-                      <p class="additional-product-card__title">Сахарозаменитель</p>
-                      <div class="additional-product-card__description">
-                        <p class="additional-product-card__text">1 упаковка (100 г)</p>
-                        <p class="additional-product-card__text">200 Р.</p>
-                      </div>
-                    </div>
+                    <p class="additional-product-card__title">Сахарозаменитель</p>
+                    <p class="additional-product-card__text">1 упаковка (100 г)</p>
+                    <p class="additional-product-card__text  additional-product-card__price">200 Р.</p>
                     <a class="additional-product-card__button">Заказать</a>
                   </article>
                 </li>
                 <li class="additionally__item">
                   <article class="additional-product-card">
-                    <div class="additional-product-card__column">
-                      <p class="additional-product-card__title">Питьевая вода</p>
-                      <div class="additional-product-card__description">
-                        <p class="additional-product-card__text">5 литров</p>
-                        <p class="additional-product-card__text">50 Р.</p>
-                      </div>
-                    </div>
+                    <p class="additional-product-card__title">Питьевая вода</p>
+                    <p class="additional-product-card__text">5 литров</p>
+                    <p class="additional-product-card__text  additional-product-card__price">50 Р.</p>
                     <a class="additional-product-card__button">Заказать</a>
                   </article>
                 </li>
                 <li class="additionally__item">
                   <article class="additional-product-card">
-                    <div class="additional-product-card__column">
-                      <p class="additional-product-card__title">Молоко</p>
-                      <div class="additional-product-card__description">
-                        <p class="additional-product-card__text">1 литр</p>
-                        <p class="additional-product-card__text">100 Р.</p>
-                      </div>
-                    </div>
+                    <p class="additional-product-card__title">Молоко</p>
+                    <p class="additional-product-card__text">1 литр</p>
+                    <p class="additional-product-card__text  additional-product-card__price">100 Р.</p>
                     <a class="additional-product-card__button">Заказать</a>
                   </article>
                 </li>
                 <li class="additionally__item">
                   <article class="additional-product-card">
-                    <div class="additional-product-card__column">
-                      <p class="additional-product-card__title">Витамины</p>
-                      <div class="additional-product-card__description">
-                        <p class="additional-product-card__text">1 упаковка (30 г)</p>
-                        <p class="additional-product-card__text">300 Р.</p>
-                      </div>
-                    </div>
+                    <p class="additional-product-card__title">Витамины</p>
+                    <p class="additional-product-card__text">1 упаковка (30 г)</p>
+                    <p class="additional-product-card__text  additional-product-card__price">300 Р.</p>
                     <a class="additional-product-card__button">Заказать</a>
                   </article>
                 </li>
@@ -231,12 +261,14 @@
       <section class="contacts contacts--grey">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <p class="contacts__title">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+          <address class="contacts__text">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
         </div>
-        <div class="contacts__map">
-          <img src="img/map.png" width="320" height="362" alt="Адрес Cat Energy">
-        </div>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/map-desktop.png 1x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x">
+          <img class="contacts__image" src="img/map.png" width="320" height="362" alt="Адрес Cat Energy">
+        </picture>
       </section>
 
     </main>

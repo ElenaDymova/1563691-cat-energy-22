@@ -1,5 +1,7 @@
 .process {
   margin-top: 27px;
+  outline: 5px solid rgba(68, 0, 255, 0.8);
+  outline-offset: -5px;
 }
 
 .process__title {
@@ -10,14 +12,21 @@
 }
 
 .process__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+
   @media (min-width: $tablet-width) {
     width: 707px;
     margin: 0 auto;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
+    margin-left: 110px;
+    margin-right: 110px;
   }
 }
 
@@ -64,6 +73,7 @@
 }
 
 .process__description--benefit {
+
   &::before {
     content: "";
     background-image: url("../../img/benefit-icon.svg");
@@ -77,6 +87,19 @@
     }
 
     @media (min-width: $desktop-width) {
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      background-image: url("../../img/one.svg");
+      width: 112px;
+      height: 280px;
+      position: absolute;
+      top: 0;
+      right: 50px;
+      background-repeat: no-repeat;
     }
   }
 }

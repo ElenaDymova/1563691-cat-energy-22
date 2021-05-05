@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Функциональное питание для котов "Cat Energy"</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+    <link rel="icon" href="img/favicon-32.svg" type="image/svg+xml" sizes="32x32">
+    <link rel="icon" href="img/favicon-16.svg" type="image/svg+xml" sizes="16x16">
+    <link rel="icon" href="img/favicon-152.svg" sizes="152x152">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -44,14 +48,15 @@
           <h2 class="order__caption">Подбор программы</h2>
           <p class="order__text">Заполните анкету, и мы подберем <br>
           программу питания для вашего кота</p>
+        </div>
           <form class="form" action="" method="post">
             <fieldset class="form__column">
               <legend class="visually-hidden">Общая информация</legend>
               <div class="form__container">
                 <div class="form__date">
                   <p class="form-date__item  form__item">
-                    <label for="cat-name">Имя:	&#9913;</label>
-                    <input class="form-date__input form__input " id="cat-name" type="text" name="cat-name" placeholder="Барсик">
+                    <label class="form-date__label" for="cat-name">Имя: &#9913;</label>
+                    <input class="form-date__input form__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
                   </p>
                   <p class="form-date__item form__item">
                     <label for="cat-weight">Вес (кг):	&#9913;</label>
@@ -64,80 +69,86 @@
                 </div>
                 <ul class="eating-list">
                   <li class="eating-list__item">
-                    <input class="visually-hidden" type="radio" name="eating-group" id="losing-weight" value="losing-weigh" checked>
-                    <label class="eating-list__radio" for="losing-weight">Похудение</label>
+                    <input class="visually-hidden eating-list__radio" type="radio" name="eating-group" id="losing-weight" value="losing-weigh" checked>
+                    <label class="eating-list__label" for="losing-weight">Похудение</label>
                   </li>
                   <li class="eating-list__item">
-                    <input class="visually-hidden" type="radio" name="eating-group" id="weight-gain" value="weight-gain">
-                    <label class="eating-list__radio" for="weight-gain">Набор массы</label>
+                    <input class="visually-hidden eating-list__radio" type="radio" name="eating-group" id="weight-gain" value="weight-gain">
+                    <label class="eating-list__label" for="weight-gain">Набор массы</label>
                   </li>
                   <li class="eating-list__item">
-                    <input class="visually-hidden" type="radio" name="eating-group" id="uncertainty" value="uncertainty">
-                    <label class="eating-list__radio" for="uncertainty">Не знаю (Нужен ваш совет)</label>
+                    <input class="visually-hidden eating-list__radio" type="radio" name="eating-group" id="uncertainty" value="uncertainty">
+                    <label class="eating-list__label" for="uncertainty">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
               </div>
             </fieldset>
+
             <fieldset class="host-contacts">
-              <legend class="host-contacts__title form__title">Контактные данные (владельца кота)</legend>
-              <div class="host-contacts__column">
-                <p class="host-contacts__point">
-                  <label class="host-contacts__item form__item" for="host-contacts__name">E-mail:&#9913;</label>
-                  <input class="host-contacts__input form__input" id="host-contacts__name" type="email" name="name" placeholder="kuklachev@gmail.com">
-                </p>
-                <p class="host-contacts__point">
-                  <label class="host-contacts__item form__item" for="host-contacts__phone">Телефон:&#9913;</label>
-                  <input class="host-contacts__input form__input" id="host-contacts__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-                </p>
-              </div>
-            </fieldset>
-            <fieldset class="form-comment">
-              <legend class="form-comment__title form__title">Комментарий</legend>
-              <input class="form-comment__input form__input" class="comment__input" type="text" name="comment__inpu" placeholder="Расскажите обо всех повадках кота">
-            </fieldset>
-            <fieldset class="form-additionally">
-              <legend class="form-additionally__title form__title">Дополнительно</legend>
-              <ul class="form-additionally__list">
-                <li class="form-additionally__item">
-                  <input class="visually-hidden" type="checkbox" name="additionally-sugar" id="filter-sugar" checked>
-                  <label class="form-additionally__label" for="filter-sugar">Сахарозаменитель</label>
-                </li>
-                <li class="form-additionally__item">
-                  <input class="visually-hidden form-additionally__radio" type="checkbox" name="additionally-water" id="filter-water">
-                  <label class="form-additionally__label" for="filter-water">Питьевая вода</label>
-                </li>
-                <li class="form-additionally__item">
-                  <input class="visually-hidden form-additionally__radio" type="checkbox" name="additionally-milk" id="filter-milk">
-                  <label class="form-additionally__label" for="filter-milk">Молоко</label>
-                </li>
-                <li class="form-additionally__item">
-                  <input class="visually-hidden form-additionally__radio" type="checkbox" name="additionally-vitamins" id="filter-vitamins">
-                  <label class="form-additionally__label" for="filter-vitamins">Витамины</label>
-                </li>
-              </ul>
+              <div class="host-contacts__wrapper">
+                <legend class="host-contacts__title form__title">Контактные данные <br> (владельца кота)</legend>
+                <div class="host-contacts__column">
+                  <p class="host-contacts__point">
+                    <label class="host-contacts__item form__item" for="host-contacts__name">E-mail:&#9913;</label>
+                    <input class="host-contacts__input form__input" id="host-contacts__name" type="email" name="name" placeholder="kuklachev@gmail.com">
+                  </p>
+                  <p class="host-contacts__point">
+                    <label class="host-contacts__item form__item" for="host-contacts__phone">Телефон:&#9913;</label>
+                    <input class="host-contacts__input form__input" id="host-contacts__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+                  </p>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-comment">
+                <div class="form-comment__wrapper">
+                  <legend class="form-comment__title form__title">Комментарий</legend>
+                  <input class="form-comment__input form__input" class="comment__input" type="text" name="comment__inpu" placeholder="Расскажите обо всех повадках кота">
+                </div>
+              </fieldset>
+
+              <fieldset class="form-additionally">
+                <div class="form-additionally__wrapper">
+                  <legend class="form-additionally__title form__title">Дополнительно</legend>
+                  <ul class="form-additionally__list">
+                    <li class="form-additionally__item">
+                      <input class="visually-hidden form-additionally__radio" type="checkbox" name="additionally-sugar" id="filter-sugar" checked>
+                      <label class="form-additionally__label" for="filter-sugar">Сахарозаменитель</label>
+                    </li>
+                    <li class="form-additionally__item">
+                      <input class="visually-hidden form-additionally__radio" type="checkbox" name="additionally-water" id="filter-water">
+                      <label class="form-additionally__label" for="filter-water">Питьевая вода</label>
+                    </li>
+                    <li class="form-additionally__item">
+                      <input class="visually-hidden form-additionally__radio" type="checkbox" name="additionally-milk" id="filter-milk">
+                      <label class="form-additionally__label" for="filter-milk">Молоко</label>
+                    </li>
+                    <li class="form-additionally__item">
+                      <input class="visually-hidden form-additionally__radio" type="checkbox" name="additionally-vitamins" id="filter-vitamins">
+                      <label class="form-additionally__label" for="filter-vitamins">Витамины</label>
+                    </li>
+                  </ul>
+                </div>
             </fieldset>
 
-            <div class="order__footer">
+            <div class="order__footer order__footer__wrapper">
               <button class="order__button" type="submit">Отправить заявку</button>
               <p class="order__necessarily">&#9913; &#8212; Обязательные поля</p>
             </div>
 
           </form>
-        </div>
       </section>
 
       <section class="contacts contacts--grey">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <p class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</p>
-          <div class="contacts__content">
-            <address class="contacts__text">ул. Большая Конюшенная, д. 19/8</address>
-            <address class="contacts__text--city">Санкт-Петербург</address>
-          </div>
+          <p class="contacts__title">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+          <address class="contacts__text">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
         </div>
-        <div class="contacts__map">
-          <img src="img/map.png" width="320" height="362" alt="Адрес Cat Energy">
-        </div>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/map-desktop.png 1x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x">
+          <img class="contacts__image" src="img/map.png" width="320" height="362" alt="Адрес Cat Energy">
+        </picture>
       </section>
 
     </main>

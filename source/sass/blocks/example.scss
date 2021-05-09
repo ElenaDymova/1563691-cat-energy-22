@@ -35,7 +35,7 @@
   border-radius: 3px;
   width: 124px;
   text-align: center;
-  padding-top: 14px;
+  padding-top: 16px;
   padding-bottom: 17px;
   box-sizing: border-box;
 
@@ -78,8 +78,8 @@
   text-align: center;
   position: absolute;
   background-color: $basic-light-grey;
-  top: 35px;
-  left: 15px;
+  top: 37px;
+  left: 17px;
 
   @media (min-width: $tablet-width) {
     @include font(400, 20px, 20px);
@@ -97,8 +97,8 @@
   text-transform: uppercase;
   width: 100%;
   text-align: center;
-  margin-top: 25px;
-  margin-bottom: 42px;
+  margin-top: 34px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     @include font(400, 20px, 20px);
@@ -111,10 +111,6 @@
     text-align: left;
     margin-top: 55px;
     margin-bottom: 75px;
-
-    br {
-      display: none;
-    }
   }
 }
 
@@ -154,7 +150,7 @@
   font-family: "Arial";
   @include font(400, 14px, 18px);
   @include reset-list;
-  padding-top: 33px;
+  padding-top: 34px;
 
   @media (min-width: $tablet-width) {
     @include font(400, 16px, 24px);
@@ -199,6 +195,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 29px;
 
   @media (min-width: $desktop-width) {
     margin-top: -133px;

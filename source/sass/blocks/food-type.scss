@@ -3,11 +3,11 @@
   margin-top: 200px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 498px;
+    margin-top: 0px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 82px;
+    margin-top: 320px;
     display: flex;
   }
 }
@@ -50,6 +50,7 @@
   @include reset-list;
   text-align: center;
   padding-top: 30px;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -129,14 +130,16 @@
 }
 
 .food-type__caption--weight {
+  padding-left: 36px;
+
   &::before {
     content: "";
     background-image: url("../../img/weight-cat.svg");
     width: 67px;
     height: 50px;
     position: absolute;
-    left: 22px;
-    top: 21px;
+    left: 12px;
+    top: 25px;
 
     @media (min-width: $tablet-width) {
       left: 412px;
@@ -150,12 +153,13 @@
 }
 
 .food-type__description {
-  font-family: "Oswald";
-  @include font(400, 16px, 24px);
+  font-family: "Arial";
+  @include font(400, 14px, 18px);
   padding-left: 20px;
-  padding-top: 22px;
-  padding-bottom: 38px;
+  padding-top: 30px;
+  padding-bottom: 44px;
   padding-right: 33px;
+  margin: 0;
   &::before {
     content: "";
     border-top: 1px solid $decoration-special-grey;

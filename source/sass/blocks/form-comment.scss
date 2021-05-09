@@ -1,0 +1,50 @@
+.form-comment {
+  border: none;
+  padding: 0;
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 69px;
+  }
+}
+
+.form-comment__input {
+  border: none;
+  border: 1px solid $form-grey;
+  margin-top: 38px;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 125px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 76px;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 134px;
+    margin-right: 36px;
+  }
+}
+
+.form-comment__wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}

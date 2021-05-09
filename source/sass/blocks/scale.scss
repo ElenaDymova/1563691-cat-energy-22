@@ -1,0 +1,41 @@
+.scale {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.scale__bar {
+  width: 84px;
+  height: 14px;
+  background-color: $basic-white;
+  border: 1px solid $special-grey;
+  box-sizing: border-box;
+  border-radius: 6px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    background-color: $scale-grey;
+    height: 6px;
+  }
+}
+
+.scale__toggle {
+  width: 35px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+  position: absolute;
+  top: 3px;
+  left: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 8px;
+    height: 8px;
+    border: 13px solid $basic-white;
+    border-radius: 50%;
+    top: -13px;
+    cursor: pointer;
+    left: 197px;
+  }
+}
+

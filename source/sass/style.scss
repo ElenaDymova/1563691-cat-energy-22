@@ -1,1 +1,35 @@
-// Начните писать стили здесь
+// Global
+
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./global.scss";
+@import "./fonts.scss";
+
+//Blocks
+
+@import "./blocks/page-header.scss";
+@import "./blocks/main-nav.scss";
+
+@import "./blocks/page-main.scss";
+@import "./blocks/food-type.scss";
+@import "./blocks/process.scss";
+@import "./blocks/example.scss";
+@import "./blocks/scale.scss";
+
+@import "./blocks/assortiment.scss";
+@import "./blocks/additionaly.scss";
+@import "./blocks/additional-product-card.scss";
+
+
+@import "./blocks/order.scss";
+@import "./blocks/form-date.scss";
+@import "./blocks/eating-list.scss";
+@import "./blocks/host-contacts.scss";
+@import "./blocks/form-comment.scss";
+@import "./blocks/form-additionally.scss";
+
+
+
+@import "./blocks/page-footer.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/contacts.scss";

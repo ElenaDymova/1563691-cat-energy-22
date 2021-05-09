@@ -1,0 +1,77 @@
+.host-contacts {
+  border: none;
+  padding: 0;
+  border-top: 1px solid $special-grey;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 69px;
+    border: none;
+  }
+}
+
+.host-contacts__column {
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.host-contacts__point {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin-left: 80px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.host-contacts__wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.host-contacts__input {
+  margin-left: 15px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}

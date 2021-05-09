@@ -1,0 +1,123 @@
+.form-additionally {
+  border: none;
+  margin-top: 23px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 67px;
+  }
+}
+
+.form-additionally__list {
+  @include reset-list;
+  margin-top: 34px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 57px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+    margin-bottom: 61px;
+  }
+}
+
+.form-additionally__item {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  @include font(400, 16px, 18px);
+  color: $basic-black;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
+}
+
+.form-additionally__label {
+  margin-left: 46px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+  }
+}
+
+.form-additionally__radio + label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -46px;
+    top: -5px;
+    width: 26px;
+    height: 26px;
+    border: 1px solid $special-grey;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      left: -70px;
+      top: -10px;
+     }
+
+     @media (min-width: $desktop-width) {
+
+     }
+  }
+}
+
+.form-additionally__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -41px;
+  top: 2px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    left: -58px;
+    top: 5px;
+   }
+
+   @media (min-width: $desktop-width) {
+
+   }
+}
+
+.form-additionally__wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}

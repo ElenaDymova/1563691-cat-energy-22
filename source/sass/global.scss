@@ -1,0 +1,28 @@
+.page-body {
+  min-width: 320px;
+  font-family: Arial;
+  @include font(400, 14px, 18px);
+  color: var(--special-dark-grey);
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

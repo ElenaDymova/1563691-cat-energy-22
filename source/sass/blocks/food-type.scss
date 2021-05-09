@@ -1,0 +1,176 @@
+.food-type__list {
+  @include reset-list;
+  margin-top: 200px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 498px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 82px;
+    display: flex;
+  }
+}
+
+.food-type__item {
+  position: relative;
+  background-color: $basic-light-grey;
+  min-height: 266px;
+  margin-top: 20px;
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    min-height: 374px;
+    width: 570px;
+    margin-left: 80px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.food-type__item--weight {
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
+}
+
+.food-type__caption {
+  font-family: "Oswald";
+  @include font(400, 24px, 37px);
+  color: $basic-black;
+  text-transform: uppercase;
+  @include reset-list;
+  text-align: center;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 53px;
+    padding-top: 77px;
+    @include font(400, 36px, 36px);
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.food-type__link {
+  font-family: "Oswald";
+  @include font(400, 16px, 16px);
+  color: $basic-black;
+  text-transform: uppercase;
+  @include reset-list;
+  padding-left: 20px;
+  &::before {
+    content: "";
+    background-image: url("../../img/arrow.svg");
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    left: 120px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+
+}
+
+.food-type__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+}
+
+.food-type__caption--thin {
+  &::before {
+    content: "";
+    background-image: url("../../img/slim-cat.svg");
+    width: 50px;
+    height: 53px;
+    position: absolute;
+    left: 22px;
+    top: 21px;
+
+    @media (min-width: $tablet-width) {
+      left: 446px;
+      top: 81px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
+  }
+}
+
+.food-type__caption--weight {
+  &::before {
+    content: "";
+    background-image: url("../../img/weight-cat.svg");
+    width: 67px;
+    height: 50px;
+    position: absolute;
+    left: 22px;
+    top: 21px;
+
+    @media (min-width: $tablet-width) {
+      left: 412px;
+      top: 91px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
+  }
+}
+
+.food-type__description {
+  font-family: "Oswald";
+  @include font(400, 16px, 24px);
+  padding-left: 20px;
+  padding-top: 22px;
+  padding-bottom: 38px;
+  padding-right: 33px;
+  &::before {
+    content: "";
+    border-top: 1px solid $decoration-special-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 53px;
+    padding-top: 24px;
+    padding-right: 351px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+    padding-bottom: 23px;
+  }
+}

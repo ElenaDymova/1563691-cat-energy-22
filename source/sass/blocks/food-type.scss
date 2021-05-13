@@ -186,24 +186,17 @@
 .food-type__description {
   font-family: "Arial";
   @include font(400, 14px, 18px);
-  padding-left: 20px;
+  margin-left: 20px;
   padding-top: 30px;
-  padding-right: 33px;
-  margin: 0;
+  padding-bottom: 23px;
+  margin-right: 33px;
   position: relative;
-
-  &::after {
-    content: "";
-    width: 240px;
-    background-color: $decoration-special-grey;
-    height: 1px;
-    position: absolute;
-    left: 20px;
-    top: 140px;
+  border-bottom: 1px solid $decoration-special-grey;
 
     @media (min-width: $tablet-width) {
-      display: none;
-    }
+      border-bottom: none;
+      margin-left: 0;
+      margin-right: 0;
   }
 
   @media (min-width: $tablet-width) {

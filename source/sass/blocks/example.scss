@@ -5,12 +5,26 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 462px;
+      background-color: $background-grey;
+      bottom: 0;
+      position: absolute;
+      }
     }
 }
 
 .example__item {
   @include reset-list;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 42px;
+  }
 }
 
 .example__title {
@@ -68,6 +82,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 69px;
+    justify-content: flex-start;
   }
 }
 
@@ -83,7 +98,7 @@
 
   @media (min-width: $tablet-width) {
     @include font(400, 20px, 20px);
-    background-color: $basic-white;
+    background-color: $background-grey;
     top: 40px;
     left: 30px;
     width: 100px;
@@ -102,14 +117,14 @@
 
   @media (min-width: $tablet-width) {
     @include font(400, 20px, 20px);
-    width: auto;
+    width: 174px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     text-align: left;
-    margin-top: 55px;
+    margin-top: 75px;
     margin-bottom: 75px;
   }
 }
@@ -155,6 +170,13 @@
   @media (min-width: $tablet-width) {
     @include font(400, 16px, 24px);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 146px;
+    position: relative;
+    padding-top: 0;
+    padding-right: 177px;
+  }
 }
 
 .example__image--fat {
@@ -189,6 +211,10 @@
 
 .example__image {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .example__button {
@@ -197,9 +223,14 @@
   justify-content: center;
   margin-top: 29px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: -70px;
+    padding-bottom: 60px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: -133px;
-    margin-bottom: 67px;
+    padding-bottom: 67px;
   }
 }
 
@@ -207,4 +238,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
+
+.example__price {
+  margin-left: 63px;
 }

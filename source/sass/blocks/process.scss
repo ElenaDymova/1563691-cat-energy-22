@@ -40,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
 
@@ -55,25 +55,27 @@
     @include font(400, 16px, 24px);
     width: 230px;
     padding-top: 111px;
-    padding-bottom: 134px;
+    padding-bottom: 47px;
     padding-left: 0;
     padding-right: 60px;
+    margin-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
     width: 201px;
     padding-top: 111px;
     padding-bottom: 44px;
+    padding-right: 0;
+    margin-left: 138px;
+    &:nth-child(1) {
+      margin-left: 0;
+    }
   }
 }
 
-.process__description {
-  padding-top: 4px;
-}
+.process__item--benefit {
 
-.process__description--benefit {
-
-  &::before {
+  &::after {
     content: "";
     background-image: url("../../img/benefit-icon.svg");
     width: 60px;
@@ -81,17 +83,10 @@
     position: absolute;
     left: 0px;
     top: 0;
-
-    @media (min-width: $tablet-width) {
-      top: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-    }
   }
 
   @media (min-width: $tablet-width) {
-    &::after {
+    &::before {
       content: "";
       background-image: url("../../img/one.svg");
       width: 112px;
@@ -102,10 +97,17 @@
       background-repeat: no-repeat;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: -42px;
+    }
+  }
 }
 
-.process__description--powder {
-  &::before {
+.process__item--powder {
+
+  &::after {
     content: "";
     background-image: url("../../img/powder-icon.svg");
     width: 60px;
@@ -113,18 +115,31 @@
     position: absolute;
     left: 0px;
     top: 0;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      background-image: url("../../img/two.svg");
+      width: 112px;
+      height: 280px;
+      position: absolute;
       top: 0;
+      right: 50px;
+      background-repeat: no-repeat;
     }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: -42px;
     }
   }
 }
 
-.process__description--eating {
-  &::before {
+.process__item--eating {
+
+  &::after {
     content: "";
     background-image: url("../../img/eating-icon.svg");
     width: 60px;
@@ -132,18 +147,31 @@
     position: absolute;
     left: 0px;
     top: 0;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      background-image: url("../../img/three.svg");
+      width: 112px;
+      height: 280px;
+      position: absolute;
       top: 0;
+      right: 50px;
+      background-repeat: no-repeat;
     }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: -42px;
     }
   }
 }
 
-.process__description--time {
-  &::before {
+.process__item--time {
+
+  &::after {
     content: "";
     background-image: url("../../img/time-icon.svg");
     width: 60px;
@@ -151,12 +179,29 @@
     position: absolute;
     left: 0px;
     top: 0;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      background-image: url("../../img/four.svg");
+      width: 112px;
+      height: 280px;
+      position: absolute;
       top: 0;
-    }
-
-    @media (min-width: $desktop-width) {
+      right: 50px;
+      background-repeat: no-repeat;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: -42px;
+    }
+  }
+}
+
+.process__description {
+  padding-top: 4px;
+  position: relative;
 }

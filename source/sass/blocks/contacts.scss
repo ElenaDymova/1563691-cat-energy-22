@@ -17,6 +17,7 @@
     padding-left: 41px;
     padding-top: 66px;
     padding-bottom: 51px;
+    width: 171px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,6 +39,7 @@
     padding-right: 41px;
     padding-top: 62px;
     text-align: right;
+    width: 160px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,6 +101,12 @@
 .contacts__image {
   width: 100%;
   height: auto;
+}
+
+.contacts__date {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .contacts__city {

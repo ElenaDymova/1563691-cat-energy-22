@@ -107,6 +107,8 @@
 }
 
 .main-display__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     width: 707px;
     margin: 0 auto;
@@ -130,8 +132,8 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    top: 100px;
-    left: 535px;
+    bottom: -80px;
+    right: 222px;
     position: absolute;
   }
 }

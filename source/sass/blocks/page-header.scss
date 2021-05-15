@@ -84,14 +84,12 @@
 
 .page-header__toggle--open::before {
   content: "";
-  display: block;
-  width: 24px;
-  height: 1.5px;
-  background-color: $basic-black;
-  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+  background-image: url(../../img/open.svg);
   position: absolute;
   right: 0px;
-  top: 0;
+  top: 5px;
+  width: 24px;
+  height: 18px;
 }
 
 .page-header__toggle--open:active::before {
@@ -104,10 +102,9 @@
 .page-header__toggle--close::before {
   content: "";
   display: block;
-  width: 24px;
-  height: 1.5px;
-  background-color: red;
-  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+  width: 18px;
+  height: 18px;
+  background-image: url(../../img/close.svg);
 }
 
 .page-header__toggle--close:active::before {

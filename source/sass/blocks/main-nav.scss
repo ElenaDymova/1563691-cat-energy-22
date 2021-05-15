@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.main-nav--closed {
+  display: none;
+}
+
 .main-nav__list {
   @include reset-list;
 
